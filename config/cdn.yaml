@@ -19,9 +19,9 @@ data:
         when: { reqProperty: path, equals: "/weather" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-my-edge-function
+          originName: edgefunction-eds-edge-function
       - name: route-hello-world-to-edge-function
         when: { reqProperty: path, equals: "/hello-world" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-my-edge-function
+          originName: edgefunction-eds-edge-function
